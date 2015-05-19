@@ -1,0 +1,162 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Visualization of Delicious.com References</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- CSS concatenated and minified via ant build script-->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,900' rel='stylesheet' type='text/css'>
+  <!-- end CSS-->
+
+  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+
+<body>
+  <div id="container" class="container">
+    <div id="first">
+      <div id="mainContent">
+        <h1 class="mainTitle">Visualization of Delicious.com References</h1>
+        <p class="desc">For 8 years I have enlisted students in my Innovation course to locate references to articles related to "Innovation" and "Diffusion" (the spread of an innovation). These references have been posted to the web platform <a href="https://delicious.com/" target="_blank">delicious.com</a> (formerly del.icio.us) under a single username for each year. Below is the breakdown of link's amount per year starting from 2006 - 2015, with the exception of 2009 & 2013:</p>
+
+        <div id="tiles">
+          <div class="box">
+            <div class="innerContent white">
+              <h2>591<br/><span>links</span></h2>
+              <a href="https://delicious.com/dm.innovation" class="tileLink">delicious.com/dm.innovation</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent blue" >
+              <h2>1091<br/><span>links</span></h2>
+              <a href="https://delicious.com/dm.innovation_2007" class="tileLink">delicious.com/dm.innovation_2007</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent gray">
+              <h2>1401<br/><span>links</span></h2>
+              <a href="https://delicious.com/dm.innovation_2008" class="tileLink">delicious.com/dm.innovation_2008</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent black">
+              <h2 style="color:#fff">713<br/><span>links</span></h2>
+              <a href="https://delicious.com/dm.innovation_2010" class="tileLink">delicious.com/dm.innovation_2010</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent black">
+              <h2 style="color:#fff">2740<br/><span>links</span></h2>
+              <a href="https://delicious.com/innovation_2011" class="tileLink">delicious.com/innovation_2011</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent gray">
+              <h2>2286<br/><span>links</span></h2>
+              <a href="https://delicious.com/innovation_2012" class="tileLink">delicious.com/innovation_2012</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent blue">
+              <h2>2880<br/><span>links</span></h2>
+              <a href="https://delicious.com/innovation_2014" class="tileLink">delicious.com/innovation_2014</a>
+            </div>
+          </div>
+          <div class="box">
+            <div class="innerContent white">
+              <h2><span>*still in <br/>development terms*</span></h2>
+              <a href="https://delicious.com/innovation_2015" class="tileLink">delicious.com/innovation_2015</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="desc">The result is 11,702 individual links to articles over 8 years, each with meta-data such as:<br/>
+          <span style="font-style:italic; color:#2A82FF">• date-time
+          • URL to the content
+          • keyword tags
+          • short descriptions.</span>
+        </p>
+
+      </div>
+    </div>
+
+    <div id="second">
+      <div id="mainContent">
+        <h1 class="secondaryTitle">OUR GOALS</h1>
+        <p>To examining content from the delicious.com platform as links to articles contributed from students enrolled in my Innovation  courses each year between 2007 and this term (excluding 2013). 
+
+        The delicious API, that we’ll use... <a href="https://github.com/SciDevs/delicious-api" target="_blank" class="invert">https://github.com/SciDevs/delicious-api</a><br/>&nbsp;
+        </p>
+        <p><span class="smallTitle">Primary Goal: </span><br/>To take all of these individual links, build an internal dataset, and develop visualizations that show the trends and interests of students looking for “innovation” over this time period. </p>
+        <p><span class="smallTitle">Secondary Goal: </span><br/>To build a platform that can continue to develop these visualizations iteratively with each new year.</p>
+      </div>
+    </div>
+
+    <div id="third" role="main">
+      <div id="vis">
+        <h1 class="secondaryTitle">Visualization based on Username + Count</h1>
+        <div id="view_selection" class="btn-group">
+          <a href="#" id="all" class="btn active">All Usernames</a>
+          <a href="#" id="year" class="btn">By Year</a>
+        </div> 
+      </div>
+    </div>
+    
+    <footer>
+      <div id="mainContent">
+        <p class="foot">Research Leader: <a href="http://www.newschool.edu/parsons/faculty.aspx?id=4e44-6331-4f44-5134">Scott Pobiner</a>. Team Assistant: <a href="http://jonathanwwilliams.com">Jonathan Williams</a>, <a href="http://www.neha-bhatia.com/">Neha Bhatia</a>, <a href="http://umisyam.com">Umi Syam</a>
+        <br/>Parsons School of Design, The New School, New York. 2015.</p>
+      </div>
+    </footer>
+  </div> <!--! end of #container -->
+
+
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+  <script defer src="js/plugins.js"></script>
+  <script defer src="js/script.js"></script>
+  <script src="js/CustomTooltip.js"></script>
+  <script src="js/libs/d3.js"></script>
+  <script src="js/vis.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $(document).ready(function() {
+          $('#view_selection a').click(function() {
+            var view_type = $(this).attr('id');
+            $('#view_selection a').removeClass('active');
+            $(this).toggleClass('active');
+            toggle_view(view_type);
+            return false;
+          });
+        });
+    });
+  </script>
+
+
+  <script>
+    window._gaq = [['_setAccount','UA-17355070-1'],['_trackPageview'],['_trackPageLoadTime']];
+    Modernizr.load({
+      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+    });
+  </script>
+
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>
