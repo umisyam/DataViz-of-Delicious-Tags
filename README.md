@@ -6,7 +6,7 @@ Since this uses D3.js, it needs to be run from a webserver. Upload it your local
 * Download .zip file or close .git repository
 * Open Terminal
 * Navigate to the directory 
-	`cd ~/code/path/to/DataViz-of-Delicious-Tags`
-* Start a webserver locally. If you are on Linux/Mac, just use Python's built-in webserver: 
+	`cd ~/insert/your/own/path/to/DataViz-of-Delicious-Tags`
+* Start a webserver locally. If you are on Linux/Mac, you can just use Python's built-in webserver: 
 	`python -m SimpleHTTPServer 8000`
 * Open your browser and type: `http://localhost:8000/`
