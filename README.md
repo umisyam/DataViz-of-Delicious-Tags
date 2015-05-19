@@ -10,3 +10,5 @@ Since this uses D3.js, it needs to be run from a webserver. Upload it your local
 * Start a webserver locally. If you are on Linux/Mac, you can just use Python's built-in webserver: 
 	`python -m SimpleHTTPServer 8000`
 * Open your browser and type: `http://localhost:8000/`
+
+Based on [tutorial](http://vallandingham.me/bubble_charts_in_d3.html) by Jim Vallandingham.
